@@ -30,7 +30,7 @@ public class TicketController {
             return new ResponseEntity(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
-
+    
     @GetMapping("/viewTicket")
     public ShowTicketResponse viewTicket(@RequestParam("ticketId")Integer ticketId){
         ShowTicketResponse showTicketResponse = ticketService.viewTicket(ticketId);

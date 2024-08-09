@@ -34,7 +34,7 @@ public class ShowSeat {
 
     private boolean foodAttached;
 
-    private String seatNo; //These values will
+    private String seatNo;
 
     @Enumerated(value = EnumType.STRING)
     private SeatType seatType; //come from the Theater seats

@@ -15,8 +15,7 @@ public interface MovieRepository extends JpaRepository<Movie,Integer> {
     //no query nothing
     //but naming of the method has to be strict
 
-    Movie findMovieByMovieNameAndAndMovieLanguage(String movieName, Language language);
-
+    Movie findMovieByMovieNameAndMovieLanguage(String movieName, Language language);
 
     Movie findMovieByMovieName(String movieName);
 

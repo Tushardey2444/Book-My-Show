@@ -22,6 +22,7 @@ public class MovieService {
                 .duration(movieRequest.getDuration())
                 .genre(movieRequest.getGenre())
                 .releaseDate(movieRequest.getReleaseDate())
+                .rating(movieRequest.getRating())
                 .build();
 
         movie = movieRepository.save(movie);
@@ -29,9 +30,6 @@ public class MovieService {
     }
 
     public Movie getMovie(Integer movieId){
-
-        Movie movie = movieRepository.findById(movieId).get();
-        return movie;
+        return movieRepository.findById(movieId).get();
     }
-
 }
